@@ -1,4 +1,4 @@
 #字典扫描，分发字典
 10 8,11,14,17,20,23 * * * /bin/sh /home/search/DICT/dict.sh all > /dev/null 2>&1
 #备份字典
-0 1 * * * scp -r -q /home/search/DICT/dict 10.168.115.142:/da1/s/apps/map_merger_dict/ > /dev/null 2>&1
+0 1 * * * scp -r -q /home/search/DICT/dict IP:/da1/s/apps/map_merger_dict/ > /dev/null 2>&1
