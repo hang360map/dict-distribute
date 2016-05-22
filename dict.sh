@@ -3,7 +3,7 @@
 #merger server config
 source /home/search/DICT/config.sh
 #复制QCMS的字典到字典库中
-scp -r -q 10.168.115.142:/da1/s/apps/map_merger_dict/QCMS/dict/* /home/search/DICT/dict/
+scp -r -q IP:/da1/s/apps/map_merger_dict/QCMS/dict/* /home/search/DICT/dict/
 if [ $? -ne 0 ];then
     echo "SCP QCMS Failed!!! Must Check."
     exit 1
